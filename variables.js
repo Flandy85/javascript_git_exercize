@@ -20,3 +20,7 @@ for(var i = 0; i < carsArray.length; i++){
  var floatNumber = 32.8;
 
  console.log(name, number, floatNumber);
+
+ str = "The git terminal gives me more headaches then my ex";
+ console.log(str.toLowerCase());
+ console.log(str);
