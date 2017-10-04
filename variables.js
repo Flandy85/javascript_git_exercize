@@ -24,3 +24,10 @@ for(var i = 0; i < carsArray.length; i++){
  str = "The git terminal gives me more headaches then my ex";
  console.log(str.toLowerCase());
  console.log(str);
+
+ let firstName = "Anders";
+ let intro = "Hello, my name is";
+
+ sentence = intro + firstName;
+
+ console.log(sentence);
