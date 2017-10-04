@@ -26,8 +26,13 @@ for(var i = 0; i < carsArray.length; i++){
  console.log(str);
 
  let firstName = "Anders";
- let intro = "Hello, my name is";
+ let intro = "Hello, my name is ";
 
  sentence = intro + firstName;
 
  console.log(sentence);
+
+ theNume = "50";
+
+ theNum = Number(theNum);
+ console.log(theNum * 5);
