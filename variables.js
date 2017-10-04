@@ -32,7 +32,7 @@ for(var i = 0; i < carsArray.length; i++){
 
  console.log(sentence);
 
- theNume = "50";
+ let theNum = "50";
 
  theNum = Number(theNum);
  console.log(theNum * 5);
