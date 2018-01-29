@@ -1,52 +1,56 @@
 // Training javascript from Udemy and git terminal
 
+// Object
 obj = {
 	name: "Anders",
 	age: 33,
 	status: "girlfriend"
 }
 console.log(obj);
+
+// Array
 array = ["Opel", "Volvo 850", "Volvo V40", "VW Golf 1.6"];
 console.log(array);
 
-var myName = "Anders Gustavsson";
-var myAge = 33;
-var myPrecizeAge = 33.1;
+// Variabels string, int and float
+var myName = "Anders Gustavsson",
+	myAge = 33,
+	myPrecizeAge = 33.1;
 console.log(myName, myAge, myPrecizeAge);
 
-// var name = "Krang";
+// Javascript toUpperCase() method
+var str = "The blue blanket is sitting on the desk";
+strUpperCase = str.toUpperCase();
 
-// personObject = {
-// 	name: "Anders",
-// 	age: 32,
-// 	status: "single"
-// }
-// console.log(personObject.name, personObject.age, personObject.status)
+// Concatinating  string varaibles
+var intro = "Hello my name is ";
+	name = "Anders";
+	fullName = intro + name;
+console.log(fullName);
 
-// carsArray = ['Mustang','Dodge Charger','El Camino'];
+// Converting avariables
+var theNum = "33";
+console.log(theNum);
+theNum = Number(theNum);
+console.log(theNum);
 
-// for(var i = 0; i < carsArray.length; i++){
-// 	console.log(carsArray[i]);
-// }
+//Splitting array
+arr = str.split(" ");
+console.log(arr);
 
-//  var name = "Anders"
-//  var number = 32;
-//  var floatNumber = 32.8;
+// Joining array
+arrJoined = arr.join("-");
+console.log(arrJoined);
 
-//  console.log(name, number, floatNumber);
+var url = arrJoined.toLowerCase();
+console.log(url);
 
-//  str = "The git terminal gives me more headaches then my ex";
-//  console.log(str.toLowerCase());
-//  console.log(str);
+// Playground
+var playStr = "Practicing javascript variables and methods to get at better understanding";
+console.log(playStr);
 
-//  let firstName = "Anders";
-//  let intro = "Hello, my name is ";
-
-//  sentence = intro + firstName;
-
-//  console.log(sentence);
-
-//  let theNum = "50";
-
-//  theNum = Number(theNum);
-//  console.log(theNum * 5);
+function myFunction() {
+    var playStr = "Practicing javascript variables and methods to get at better understanding",
+    	result = playStr.
+    document.getElementById("title").innerHTML = result;
+}
