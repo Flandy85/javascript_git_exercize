@@ -75,4 +75,39 @@ var website = "https://wastelandsolution.se/",
 	console.log(websiteUrl);
 
 
+// If else statments
+
+/*var firstname = "Anders";
+if(firstname == "Anders") {
+	alert("Yes my name is Anders")
+}
+else {
+	alert("My name is NOT Anders");
+}
+
+if(firstname == "Joseph") {
+	alert("Hello Joe!");
+}
+else if (firstname == "Anders") {
+	alert("Yes thats correct!")
+}
+else {
+	alert("Who are you?")
+}
+*/
+
+// Prompt for see user input
+var firstName = prompt('What is your name?');
+// Check if the name is null, clicking cancel button
+if(firstName === null) {
+	alert("You don't have a name!");
+}
+//Check if user puts in a name when prompted
+else if (firstName) {
+	alert("Hello " + firstName);
+}
+// If empty and press ok button
+else {
+	alert("Hello guest");
+}
 
