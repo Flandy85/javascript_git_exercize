@@ -133,7 +133,48 @@ else {
 // console.log(input);
 // data = txt.value;
 // console.log(data);
+
+// Select id main
 var main = document.querySelector('#main');
-main.innerHTML = 'Hello World';
-main.style.border = '1px solid red';
-main.style.paddingTop = '50px';
+main.innerHTML = 'Hello World'; // Change content to hello world
+main.style.border = '1px solid red'; // change css 1px solid red border
+main.style.paddingTop = '50px'; // add 50px padding top
+main.style.color = '#fff'; // Change text color to white
+main.style.textAlign = 'center';
+main.style.fontSize = '50px';
+main.style.fontWeight = '800';
+
+// Select body html tag
+var body = document.querySelector('body'); 
+body.style.backgroundColor = 'black' // Change background color on body to white
+
+// Sample function
+// function Addition(num1, num2) {
+// 	// var Name = prompt("What is ypur name?");
+// 	// alert("Hello " + Name);
+// 		total = num1 + num2;
+// 		return total;
+// }
+// var newTotal = Addition(10, 15);
+// alert(newTotal);
+
+// Multiplikation function example
+function Multiplikation(number1, number2) {
+	Total = number1 * number2
+	return Total;
+}
+Multiplikation(50, 23);
+console.log(Multiplikation(50, 23));
+
+// Add names function 
+function YourNames(firstName, lastName) {
+	fullName = firstName + lastName;
+	return fullName;
+}
+console.log(YourNames("Anders ", "Gustavsson"));
+// // if(today == "Monday") {
+// // 	Addition();
+// // }
+// // else {
+// 	Addition();
+// }
