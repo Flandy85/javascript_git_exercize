@@ -1,38 +1,52 @@
 // Training javascript from Udemy and git terminal
 
-var name = "Krang";
-
-personObject = {
+obj = {
 	name: "Anders",
-	age: 32,
-	status: "single"
+	age: 33,
+	status: "girlfriend"
 }
-console.log(personObject.name, personObject.age, personObject.status)
+console.log(obj);
+array = ["Opel", "Volvo 850", "Volvo V40", "VW Golf 1.6"];
+console.log(array);
 
-carsArray = ['Mustang','Dodge Charger','El Camino'];
+var myName = "Anders Gustavsson";
+var myAge = 33;
+var myPrecizeAge = 33.1;
+console.log(myName, myAge, myPrecizeAge);
 
-for(var i = 0; i < carsArray.length; i++){
-	console.log(carsArray[i]);
-}
+// var name = "Krang";
 
- var name = "Anders"
- var number = 32;
- var floatNumber = 32.8;
+// personObject = {
+// 	name: "Anders",
+// 	age: 32,
+// 	status: "single"
+// }
+// console.log(personObject.name, personObject.age, personObject.status)
 
- console.log(name, number, floatNumber);
+// carsArray = ['Mustang','Dodge Charger','El Camino'];
 
- str = "The git terminal gives me more headaches then my ex";
- console.log(str.toLowerCase());
- console.log(str);
+// for(var i = 0; i < carsArray.length; i++){
+// 	console.log(carsArray[i]);
+// }
 
- let firstName = "Anders";
- let intro = "Hello, my name is ";
+//  var name = "Anders"
+//  var number = 32;
+//  var floatNumber = 32.8;
 
- sentence = intro + firstName;
+//  console.log(name, number, floatNumber);
 
- console.log(sentence);
+//  str = "The git terminal gives me more headaches then my ex";
+//  console.log(str.toLowerCase());
+//  console.log(str);
 
- let theNum = "50";
+//  let firstName = "Anders";
+//  let intro = "Hello, my name is ";
 
- theNum = Number(theNum);
- console.log(theNum * 5);
+//  sentence = intro + firstName;
+
+//  console.log(sentence);
+
+//  let theNum = "50";
+
+//  theNum = Number(theNum);
+//  console.log(theNum * 5);
