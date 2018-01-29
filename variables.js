@@ -54,3 +54,25 @@ function myFunction() {
     	result = playStr.
     document.getElementById("title").innerHTML = result;
 }
+// Project1, making a url variable practice 
+var array1 = ["https://wastelandsolution.se"], // array1
+	array2 = ["/wordpress/kontakta-oss/"], // array2
+	arrUrl = array1.concat(array2); // Concat array1 and array2, making one array
+	url = arrUrl.join(""); // joining arrays with no space between them.
+	console.log(url);
+
+//Project2
+var website = "https://wastelandsolution.se/",
+	new_string = "The quiCK brown FOX jumps of the  lazy dog",
+	new_string = new_string.toLowerCase(), // Make string into lowe case
+	new_url = new_string.replace("  ", " "), // replace double whitespace to one whitespace
+	new_url = new_url.split(" "),
+	new_url = new_url.join("-"),
+	websiteUrl = website + new_url;
+
+	console.log(new_string);
+	console.log(new_url);
+	console.log(websiteUrl);
+
+
+
