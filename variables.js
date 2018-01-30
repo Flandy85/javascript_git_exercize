@@ -138,7 +138,6 @@ else {
 var main = document.querySelector('#main');
 main.innerHTML = 'Hello World'; // Change content to hello world
 main.style.border = '1px solid red'; // change css 1px solid red border
-main.style.paddingTop = '50px'; // add 50px padding top
 main.style.color = '#fff'; // Change text color to white
 main.style.textAlign = 'center';
 main.style.fontSize = '50px';
@@ -147,16 +146,18 @@ main.style.fontWeight = '800';
 // Select body html tag
 var body = document.querySelector('body'); 
 body.style.backgroundColor = 'black' // Change background color on body to white
-
-// Sample function
-// function Addition(num1, num2) {
-// 	// var Name = prompt("What is ypur name?");
-// 	// alert("Hello " + Name);
-// 		total = num1 + num2;
-// 		return total;
-// }
-// var newTotal = Addition(10, 15);
-// alert(newTotal);
+/*********************************************************
+			Functions
+*********************************************************/
+Sample function
+function Addition(num1, num2) {
+	// var Name = prompt("What is ypur name?");
+	// alert("Hello " + Name);
+		total = num1 + num2;
+		return total;
+}
+var newTotal = Addition(10, 15);
+alert(newTotal);
 
 // Multiplikation function example
 // function Multiplikation(number1, number2) {
@@ -173,23 +174,43 @@ body.style.backgroundColor = 'black' // Change background color on body to white
 // }
 // console.log(YourNames("Anders ", "Gustavsson"));
 
-function getName(class_selector) { // Function with class selector
-	var nameElement = document.querySelector(class_selector); // class selector 
-	var name = nameElement.value;
+// function getName(class_selector) { // Function with class selector
+// 	var nameElement = document.querySelector(class_selector); // class selector 
+// 	var name = nameElement.value;
 
-	var newName = name.replace('Smith', 'Gustavsson'); // Replace Smith with Gustavsson
-	return newName;
-}
-// Function getFirstName
-function getFirstName() {
-	var name = getName('.name') //Variabel name that holds getName function and select class name .name 
-	var firstName = name.split(" "); // Split array into 2 pieces
+// 	var newName = name.replace('Smith', 'Gustavsson'); // Replace Smith with Gustavsson
+// 	return newName;
+// }
+// // Function getFirstName
+// function getFirstName() {
+// 	var name = getName('.name') //Variabel name that holds getName function and select class name .name 
+// 	var firstName = name.split(" "); // Split array into 2 pieces
 
-	return firstName[0]; // Return first piece of array
-	console.log(firstName);
-}
-var firstname = getFirstName();
-console.log(firstname);
+// 	return firstName[0]; // Return first piece of array
+// 	console.log(firstName);
+// }
+// var firstname = getFirstName();
+// console.log(firstname);
 
 // var currentName = getName();
 // console.log(currentName);
+
+/*********************************************************
+			Functions and Events
+*********************************************************/
+// Function Change HTML
+
+function changeMainHtml() {
+	var main = document.querySelector('#main');
+	var sentence1 = "Hello thank you for changing me",
+		sentence2 = "Oh hello, Im a diffrent sentence";
+
+	if(main.innerHTML == sentence1){
+		main.innerHTML = sentence2
+		main.style.color = 'yellow';
+	}
+	else {
+		main.innerHTML = sentence1;
+		main.style.color = '#fff';
+	}
+}
