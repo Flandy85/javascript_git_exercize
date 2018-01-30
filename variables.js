@@ -159,22 +159,37 @@ body.style.backgroundColor = 'black' // Change background color on body to white
 // alert(newTotal);
 
 // Multiplikation function example
-function Multiplikation(number1, number2) {
-	Total = number1 * number2
-	return Total;
-}
-Multiplikation(50, 23);
-console.log(Multiplikation(50, 23));
-
-// Add names function 
-function YourNames(firstName, lastName) {
-	fullName = firstName + lastName;
-	return fullName;
-}
-console.log(YourNames("Anders ", "Gustavsson"));
-// // if(today == "Monday") {
-// // 	Addition();
-// // }
-// // else {
-// 	Addition();
+// function Multiplikation(number1, number2) {
+// 	Total = number1 * number2
+// 	return Total;
 // }
+// Multiplikation(50, 23);
+// console.log(Multiplikation(50, 23));
+
+// // Add names function 
+// function YourNames(firstName, lastName) {
+// 	fullName = firstName + lastName;
+// 	return fullName;
+// }
+// console.log(YourNames("Anders ", "Gustavsson"));
+
+function getName(class_selector) { // Function with class selector
+	var nameElement = document.querySelector(class_selector); // class selector 
+	var name = nameElement.value;
+
+	var newName = name.replace('Smith', 'Gustavsson'); // Replace Smith with Gustavsson
+	return newName;
+}
+// Function getFirstName
+function getFirstName() {
+	var name = getName('.name') //Variabel name that holds getName function and select class name .name 
+	var firstName = name.split(" "); // Split array into 2 pieces
+
+	return firstName[0]; // Return first piece of array
+	console.log(firstName);
+}
+var firstname = getFirstName();
+console.log(firstname);
+
+// var currentName = getName();
+// console.log(currentName);
